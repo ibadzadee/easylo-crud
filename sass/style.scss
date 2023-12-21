@@ -1,0 +1,11 @@
+@import "./mixin/mixin";
+@import "./variable/variable";
+
+#apply{
+    border: none;
+    background-color: $green;
+    color: white;
+}
+.navbar-nav{
+    gap: 40px;
+}
