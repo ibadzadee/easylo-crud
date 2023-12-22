@@ -1,3 +1,7 @@
+* a {
+  text-decoration: none;
+}
+
 #apply {
   border: none;
   background-color: #10C98F;
@@ -53,6 +57,7 @@ nav {
 #banner .right {
   background-color: white;
   padding: 30px 0px;
+  margin-top: 40px;
 }
 #banner .right .tittle {
   margin-bottom: 12px;
@@ -82,14 +87,34 @@ nav {
   margin-top: 0em;
 }
 #banner .right form .row {
+  width: 100%;
+  padding: 0px 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
+#banner .right form .row button {
+  background-color: #10C98F;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+}
+#banner .right form .row p {
+  color: gray;
+  padding-top: 20px;
+}
+#banner .right form .row #label {
+  padding-top: 30px;
+}
 #banner .right form .row .select-option {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+#banner .right form .row .select-option select {
+  padding: 10px;
 }
 
 .btnAll {
@@ -103,4 +128,79 @@ nav {
   background-color: #10C98F;
   transition: all 0.5s ease;
   border: 2px solid #10C98F;
+}
+
+#solutions {
+  width: 100%;
+  padding: 60px 0px;
+}
+#solutions .solutions-center {
+  width: 100%;
+}
+#solutions .solutions-center .top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+#solutions .solutions-center .top h1 {
+  color: #0F4332;
+  font-weight: 700;
+  position: relative;
+}
+#solutions .solutions-center .top h1::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  bottom: -20px;
+  height: 3px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  background: #10C98F;
+}
+#solutions .solutions-center .top p {
+  width: 40%;
+  color: #6D6D6D;
+  padding: 40px 0px;
+}
+#solutions .solutions-center .bottom {
+  width: 100%;
+}
+#solutions .solutions-center .bottom .cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+#solutions .solutions-center .bottom .cards img {
+  width: 60px;
+}
+#solutions .solutions-center .bottom .cards h5 {
+  color: #0C8760;
+  font-size: 17px;
+}
+#solutions .solutions-center .bottom .cards .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#solutions .solutions-center .bottom .cards .text a h4 {
+  color: #0F4332;
+  font-weight: 700;
+}
+#solutions .solutions-center .bottom .cards .text p {
+  color: #6D6D6D;
+  font-size: 19px;
+}
+#solutions .solutions-center .bottom .cards .text:hover a h4 {
+  color: #10C98F;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=style.css.map */

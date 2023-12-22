@@ -1,6 +1,12 @@
 @import "./mixin/mixin";
 @import "./variable/variable";
 
+* {
+    a {
+        text-decoration: none;
+    }
+}
+
 #apply {
     border: none;
     background-color: $green;
@@ -63,6 +69,7 @@ nav {
     .right {
         background-color: white;
         padding: 30px 0px;
+        margin-top: 40px;
 
         .tittle {
             margin-bottom: 12px;
@@ -88,15 +95,40 @@ nav {
         form {
             @include display;
             margin-top: 0em;
-            
+
             .row {
+                width: 100%;
+                padding: 0px 30px;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 gap: 20px;
-                .select-option{
+
+                button {
+                    background-color: $green;
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: none;
+                    color: white;
+                }
+
+                p {
+                    color: gray;
+                    padding-top: 20px;
+                }
+
+                #label {
+                    padding-top: 30px
+                }
+
+                .select-option {
                     display: flex;
                     flex-direction: column;
+                    gap: 10px;
+
+                    select {
+                        padding: 10px;
+                    }
                 }
             }
         }
@@ -116,3 +148,91 @@ nav {
         border: 2px solid $green;
     }
 }
+
+// < !------------------Solutions------------------->
+#solutions {
+    width: 100%;
+    padding: 60px 0px;
+
+    .solutions-center {
+        width: 100%;
+
+        .top {
+            width: 100%;
+            @include display;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+
+            h1 {
+                color: $dark-green;
+                font-weight: 700;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 110px;
+                    bottom: -20px;
+                    height: 3px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: 0 auto;
+                    background: #10C98F;
+                }
+            }
+
+            p {
+                width: 40%;
+                color: $p-color;
+                padding: 40px 0px;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+
+            .cards {
+                @include display(center, flex-start);
+                flex-direction: column;
+                gap: 20px;
+
+                img {
+                    width: 60px;
+                }
+
+                h5 {
+                    color: $light-green;
+                    font-size: 17px
+                }
+
+                .text {
+                    @include display;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    a h4 {
+                        color: $dark-green;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: $p-color;
+                        font-size: 19px;
+                    }
+
+                    &:hover {
+                        a h4 {
+                            color: $green;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// <!------------------SECTON-3------------------->
