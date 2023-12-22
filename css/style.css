@@ -2,8 +2,105 @@
   border: none;
   background-color: #10C98F;
   color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .navbar-nav {
   gap: 40px;
+}
+
+nav {
+  z-index: 10;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+  font-weight: 700;
+}
+
+#banner {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(16, 201, 143, 0.4), rgba(16, 201, 143, 0.4)), url(../img/h1_hero1.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-block: 200px;
+  position: relative;
+  z-index: 1;
+}
+#banner .left h1 {
+  font-size: 60px;
+  width: 70%;
+  color: white;
+  position: relative;
+}
+#banner .left h1::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  background: #fff;
+}
+#banner .left p {
+  font-size: 40px;
+  color: white;
+  padding: 30px 0px;
+}
+#banner .right {
+  background-color: white;
+  padding: 30px 0px;
+}
+#banner .right .tittle {
+  margin-bottom: 12px;
+  padding-bottom: 13px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#banner .right .tittle::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  bottom: 0px;
+  height: 3px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  background: #10C98F;
+}
+#banner .right form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0em;
+}
+#banner .right form .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#banner .right form .row .select-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnAll {
+  padding: 20px 30px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+.btnAll:hover {
+  background-color: #10C98F;
+  transition: all 0.5s ease;
+  border: 2px solid #10C98F;
 }/*# sourceMappingURL=style.css.map */
