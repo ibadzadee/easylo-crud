@@ -178,8 +178,14 @@ nav {
   flex-direction: column;
   gap: 20px;
 }
-#solutions .solutions-center .bottom .cards img {
+#solutions .solutions-center .bottom .cards .img {
+  width: 30px;
+}
+#solutions .solutions-center .bottom .cards .img img {
   width: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #solutions .solutions-center .bottom .cards h5 {
   color: #0C8760;
