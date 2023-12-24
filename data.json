@@ -43,6 +43,13 @@
       "name": "Home Loan",
       "description": "What are my options and the cost to exercise?",
       "about": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
+    },
+    {
+      "id": 3,
+      "image": "http://127.0.0.1:5500/img/services3.svg",
+      "name": "Home Loan",
+      "description": "What are my options and the cost to exercise?",
+      "about": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
     }
   ]
 }

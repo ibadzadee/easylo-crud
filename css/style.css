@@ -638,8 +638,8 @@ footer span {
 }
 .favorite .bottom {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 #top-button {
